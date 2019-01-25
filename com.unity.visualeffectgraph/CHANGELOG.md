@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [4.11.0-preview] - 2019-XX-XX
+### Added
+- Expose light probes parameters in VisualEffect inspector
+
 ### Fixed
 - Better Handling of Null or Missing Parameter Binders (Editor + Runtime)
 - Fix unexpected issue when plugging per particle data into hash of per component fixed random
