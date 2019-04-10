@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Exception while removing a sub-slot of a dynamic operator
 - Improve AA line rendering
 - Fix screen space size block
+- Crash chaining two spawners each other [Case 1135299](https://issuetracker.unity3d.com/issues/crash-chaining-two-spawners-to-each-other-produces-an-infinite-loop)
 
 ## [4.10.0-preview] - 2019-02-16
 ### Fixed
