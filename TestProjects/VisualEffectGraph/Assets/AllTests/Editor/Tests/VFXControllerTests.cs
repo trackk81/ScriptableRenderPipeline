@@ -867,7 +867,7 @@ namespace UnityEditor.VFX.Test
             m_ViewController.LightApplyChanges();
 
             var flowAnchorController = m_ViewController.allChildren.OfType<VFXContextController>().SelectMany(o => o.flowInputAnchors.Concat(o.flowOutputAnchors));
-            var outputControllers = flowAnchorController.Where(o => o.owner == spawner_C && o.direction == Experimental.GraphView.Direction.Output).ToArray();
+            var outputControllers = flowAnchorController.Where(o => o.owner == spawner_C && o.direction == Experimental.UIElements.GraphView.Direction.Output).ToArray();
             Assert.AreEqual(1, outputControllers.Length);
 
             var compatiblePorts = m_ViewController.GetCompatiblePorts(outputControllers[0], null);
