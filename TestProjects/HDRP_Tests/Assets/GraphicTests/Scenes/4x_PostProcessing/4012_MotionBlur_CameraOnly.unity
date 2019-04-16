@@ -814,3 +814,17 @@ MonoBehaviour:
   type: 2
   axisSide: {x: 0, y: 1, z: 0}
   perFrame: 1
+--- !u!114 &1618510979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618510977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac57d750904b42b4d979a608d8eb8acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockPosition: 1
+  blockRotation: 0
