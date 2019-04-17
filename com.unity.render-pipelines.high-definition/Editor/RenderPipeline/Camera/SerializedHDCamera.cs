@@ -30,7 +30,7 @@ namespace UnityEditor.Experimental.Rendering.HDPipeline
         public SerializedProperty clearDepth;
         public SerializedProperty volumeLayerMask;
         public SerializedProperty volumeAnchorOverride;
-        public SerializedProperty allowHWDynamicResolution;
+        public SerializedProperty allowDynamicResolution;
         public SerializedFrameSettings frameSettings;
         public CameraEditor.Settings baseCameraSettings { get; private set; }
 
@@ -80,7 +80,7 @@ namespace UnityEditor.Experimental.Rendering.HDPipeline
                 );
 
             probeLayerMask = serializedAdditionalDataObject.Find((HDAdditionalCameraData d) => d.probeLayerMask);
-            allowHWDynamicResolution = serializedObject.FindProperty("m_AllowDynamicResolution");
+            allowDynamicResolution = serializedAdditionalDataObject.Find((HDAdditionalCameraData d) => d.allowDynamicResolution);
 
             baseCameraSettings = new CameraEditor.Settings(serializedObject);
             baseCameraSettings.OnEnable();

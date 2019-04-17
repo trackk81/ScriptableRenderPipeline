@@ -447,7 +447,8 @@ namespace UnityEditor.Experimental.Rendering.HDPipeline
 
         static void Drawer_AllowDynamicResolution(SerializedHDCamera p, Editor owner)
         {
-            EditorGUILayout.PropertyField(p.allowHWDynamicResolution, allowHWDynResContent);
+            EditorGUILayout.PropertyField(p.allowDynamicResolution, allowDynResContent);
+            p.baseCameraSettings.allowDynamicResolution.boolValue = p.allowDynamicResolution.boolValue;
         }
 
         static void Drawer_FieldRenderingPath(SerializedHDCamera p, Editor owner)

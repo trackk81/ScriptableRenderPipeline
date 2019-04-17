@@ -1602,7 +1602,7 @@ namespace UnityEngine.Experimental.Rendering.HDPipeline
                 float sw = scaleW * p;
                 float sh = scaleH * p;
                 int pw, ph;
-                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled(camera.camera.allowDynamicResolution))
+                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled())
                 {
                     pw = Mathf.Max(1, Mathf.CeilToInt(sw * camera.actualWidth));
                     ph = Mathf.Max(1, Mathf.CeilToInt(sh * camera.actualHeight));
@@ -2231,7 +2231,7 @@ namespace UnityEngine.Experimental.Rendering.HDPipeline
             // Final viewport is handled in the final blit in this case
             if (!HDUtils.PostProcessIsFinalPass())
             {
-                if (dynResHandler.HardwareDynamicResIsEnabled(camera.camera.allowDynamicResolution))
+                if (dynResHandler.HardwareDynamicResIsEnabled())
                 {
                     var scaledSize = dynResHandler.GetLastScaledSize();
                     backBufferRect.width = scaledSize.x;
@@ -2290,7 +2290,7 @@ namespace UnityEngine.Experimental.Rendering.HDPipeline
 
             public void SetHWDynamicResolutionState(HDCamera camera)
             {
-                bool needsHW = HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled(camera.camera.allowDynamicResolution);
+                bool needsHW = HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled();
                 if (needsHW && !m_HasHWDynamicResolution)
                 {
                     // If any target has no dynamic resolution enabled, but we require it, we need to cleanup the pool.

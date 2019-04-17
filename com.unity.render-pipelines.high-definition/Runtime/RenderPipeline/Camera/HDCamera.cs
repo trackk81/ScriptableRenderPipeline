@@ -89,7 +89,7 @@ namespace UnityEngine.Experimental.Rendering.HDPipeline
         public Vector4 doubleBufferedViewportScale {
             get
             {
-                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled(camera.allowDynamicResolution))
+                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled())
                 {
                     return new Vector4(1.0f, 1.0f, 1.0f, 1.0f);
                 }
@@ -101,7 +101,7 @@ namespace UnityEngine.Experimental.Rendering.HDPipeline
         {
             get
             {
-                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled(camera.allowDynamicResolution))
+                if (HDDynamicResolutionHandler.instance.HardwareDynamicResIsEnabled())
                 {
                     return new Vector4(1.0f, 1.0f, 1.0f, 1.0f);
                 }
