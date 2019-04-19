@@ -734,7 +734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: renderPipelineAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 5ff308da058b7184aa6adca9dc50c32a,
+      objectReference: {fileID: 11400000, guid: d7fe5f39d2c099a4ea1f1f610af309d7,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c07ace9ab142ca9469fa377877c2f1e7, type: 3}
