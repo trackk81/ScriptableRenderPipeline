@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.056713473, g: 0.07563742, b: 0.113713734, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -489,7 +489,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 43000f349bf32a141a011f4586f52abb, type: 2}
+  - {fileID: 2100000, guid: 355929cdb508af344ae663b92270854e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -738,7 +738,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1354224053}
   - component: {fileID: 1354224052}
-  - component: {fileID: 1354224051}
   m_Layer: 0
   m_Name: Scene Settings
   m_TagString: Untagged
@@ -746,20 +745,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1354224051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354224050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 441482e8936e35048a1dffac814e3ef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Profile: {fileID: 11400000, guid: f4b490fe7e4979f4da3efa4a1302fdd9, type: 2}
-  m_StaticLightingSkyUniqueID: 2
 --- !u!114 &1354224052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,7 +761,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: f4b490fe7e4979f4da3efa4a1302fdd9, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 6965c9fd66e6c8e43ad7dee169dc829b, type: 2}
 --- !u!4 &1354224053
 Transform:
   m_ObjectHideFlags: 0
